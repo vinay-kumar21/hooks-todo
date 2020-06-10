@@ -14,7 +14,7 @@ export default function Todoform() {
     } else {
       setTodo("");
     }
-  }, [currentTodo.id]);
+  }, [currentTodo.id,currentTodo.text]);
 
   const handleSubmit = event => {
     console.log(currentTodo.id);
