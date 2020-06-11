@@ -17,12 +17,12 @@ export default function Todoform() {
   }, [currentTodo.id,currentTodo.text]);
 
   const handleSubmit = event => {
-    console.log(currentTodo.id);
+  
     event.preventDefault();
     if (currentTodo.text) {
       dispatch({ type: "UPDATE_TODO", payload: todo });
     } else {
-      console.log(currentTodo.text);
+    
       dispatch({ type: "ADD_TODO", payload: todo });
     }
    
@@ -37,6 +37,7 @@ export default function Todoform() {
         className="border-black border-solid border-2"
         onChange={event => setTodo(event.target.value)}
         value={todo}
+        data-test='input-box'
       />
     </form>
   );

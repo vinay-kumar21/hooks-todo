@@ -12,30 +12,26 @@ describe("TodoForm Component", () => {
     state: {
       todos: [
         {
-          id: "1",
-          text: "Test one",
-          complete: false
+          id: "1",text: "Test one",complete: false
         },
         {
-          id: "2",
-          text: "Test two",
-          complete: false
+          id: "2",text: "Test two",complete: false
         },
         {
-          id: "3",
-          text: "Test three",
-          complete: false
+          id: "3",text: "Test three",complete: false
         },
         {
-          id: "4",
-          text: "Test four",
-          complete: false
+          id: "4",text: "Test four",complete: false
         }
       ]
     },
     dispatch: jest.fn()
   };
   let wrapper;
+
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
  
   it("Should display initially four List Items.", () => {
     const wrapper = mount(
