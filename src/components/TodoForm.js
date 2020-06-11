@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import TodosContext from "../context";
 
 export default function Todoform() {
@@ -6,7 +6,7 @@ export default function Todoform() {
   const {
     state: { currentTodo = {} },
     dispatch
-  } = useContext(TodosContext);
+  } = React.useContext(TodosContext);
 
   useEffect(() => {
     if (currentTodo.text) {
@@ -30,7 +30,7 @@ export default function Todoform() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex justify-center p-5">
+    <form onSubmit={handleSubmit} className="flex justify-center p-5" data-test='form-component'>
         <h1 className="m-1">Enter your todo:</h1>
       <input
         type="text"
