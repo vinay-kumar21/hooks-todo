@@ -7,7 +7,8 @@ const TodosContext=React.createContext({
         {id:1,text:"Read React", complete:false},
         {id:2,text:"Read React Hooks", complete:false},
         {id:3,text:"Practice Learning", complete:false},
-        {id:4,text:"Do project", complete:false}
+        {id:4,text:"Do project", complete:false},
+        {id:5,text:"Git Commit", complete:false}
     ],
     currentTodo:{}
 
