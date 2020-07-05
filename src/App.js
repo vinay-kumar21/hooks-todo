@@ -18,6 +18,15 @@ function App() {
           <text>
             this is just a sample text
           </text>
+          <text>
+            this is just a sample text
+          </text>
+          <text>
+            this is just a sample text
+          </text>
+          <text>
+            this is just a sample text
+          </text>
         </div>
       </TodosContext.Provider>
     </div>
