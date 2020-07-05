@@ -14,6 +14,11 @@ function App() {
       <TodosContext.Provider value={{ state, dispatch }}>
         <TodoForm />
         <TodoList />
+        <div>
+          <text>
+            this is just a sample text
+          </text>
+        </div>
       </TodosContext.Provider>
     </div>
   );

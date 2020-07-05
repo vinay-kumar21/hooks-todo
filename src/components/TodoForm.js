@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import TodosContext from "../context";
 
-export default function Todoform() {
+export default function TodoForm() {
   const [todo, setTodo] = useState("");
   const {
     state: { currentTodo = {} },
